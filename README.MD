@@ -17,7 +17,7 @@ build dockers
 <!-- build proper images
 docker build -t image1 .  
 docker build -t image2 .   -->
-run images
+run images  
 `docker-compose up`  
 
 <!-- `docker run --name myimage1 -d -p 8080:80 multidokcer/image1`  
