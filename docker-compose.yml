@@ -26,7 +26,7 @@ services:
     container_name: production_nginx
     restart: always
     ports:
-      - 80:80
+      - 800:80
       - 443:443
       
 #   ismydependencysafe:
@@ -34,5 +34,3 @@ services:
 #     container_name: production_ismydependencysafe
 #     expose:
 #       - "80"
-# networks:
-#   my-network-name:
