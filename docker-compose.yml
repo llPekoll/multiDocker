@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+
+  myimage1:
+    build: ./testdocker1
+    container_name: myimage1
+    restart: always
+    environment:
+      - IL_DIDANNENT=CommeDuCristal
+    expose:
+      - 8080
+  
+  myimage2:
+    build: ./testdocker2
+    container_name: myimage2
+    restart: always
+    environment:
+      - SI_TOUT_LE_MONDE=AvaisCompris
+      - CE_QUE_LA_BIBLE=AsVouluNousDire
+    expose:
+      - 8081
+
+  nginx: 
+    build: ./nginx-proxy
+    container_name: production_nginx
+    restart: always
+    ports:
+      - 80:80
+      - 443:443
+      
+#   ismydependencysafe:
+#     image: ismydependencysafe:latest
+#     container_name: production_ismydependencysafe
+#     expose:
+#       - "80"
+# networks:
+#   my-network-name:
