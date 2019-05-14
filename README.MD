@@ -3,6 +3,9 @@
 2 FastApi Docker  
 Nginx not Dockerized
 
+#Todo
+====
+- [ ]use workers
 
 Docker stuff
 ======
@@ -48,3 +51,4 @@ copy peko.conf to nginx path fodler
 # - 4 run docker
 
 > `docker-compose up
+
