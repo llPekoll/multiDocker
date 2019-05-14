@@ -20,11 +20,15 @@ docker build -t image2 .   -->
 run images  
 `docker-compose up`  
 
-<!-- `docker run --name myimage1 -d -p 8080:80 multidokcer/image1`  
-`docker run --name myimage2 -d -p 8081:80 multidokcer/image2`    -->
+<!-- `docker run --name myimage1 -d -p 8080:80 image1`  
+`docker run --name myimage2 -d -p 8081:80 image2`    -->
 
-Setup nginx
+work localy
 ----
-https://www.youtube.com/watch?v=rq2aKItyeqo  
-docker run -d --name nginx-proxy nginx  
-bash -c "clear && docker exec -it nginx-proxy sh"  
+`cat /etc/hosts`  
+add:  
+`127.0.0.1    pekochan.me www.pekochan.me`  
+`127.0.0.1    welcomeapp.fr www.welcomeapp.fr`  
+
+Reboot DNS  
+`ᐅ sudo killall -HUP mDNSResponder`
