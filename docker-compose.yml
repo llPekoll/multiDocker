@@ -3,17 +3,19 @@ version: '3'
 services:
 
   myimage1:
-    build: ./peko
-    container_name: myimage1
+    build: ./pekochan.me
+    container_name: pekochan 
+    restart: always
     ports:
       - 8081:80
     expose:
       - 8081
   
   myimage2:
-    build: ./welcome
-    container_name: myimage2
+    build: ./Welcome.io
+    container_name: welcome
+    restart: always
     ports:
-      - 8082:80
+      - 8082:8000
     expose:
       - 8082
